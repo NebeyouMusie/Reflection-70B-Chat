@@ -4,7 +4,7 @@ from lib.utils import reflection_response
 
 st.set_page_config(page_title="Reflection 70B", page_icon='🤖')
 
-st.header("Chat With Reflection 70B")
+st.title("Chat With Reflection 70B 🤖")
 
 # initialize session state
 if "chat_history" not in st.session_state:
