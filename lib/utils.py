@@ -6,16 +6,25 @@ current_dir = Path(__file__).resolve().parent
 parent_dir = current_dir.parent
 sys.path.append(str(parent_dir))
 
+from huggingface_hub import InferenceClient
 
 from lib.config import load_config, get_hugging_face_api_key
 
 load_config()
 
+
+client = InferenceClient(
+    "mattshumer/Reflection-Llama-3.1-70B",
+    token=get_hugging_face_api_key(),
+)
+
+
+
 # Function to setup the llm
-def reflection_response():
-    llm = ChatGroq(
-        model='gemma2-9b-it',
-        temperature=0.7,
-        api_key=get_groq_api_key()
-    )
-    return llm
+def reflection_response(user_input):
+    for message in client.chat_completion(
+        messages=[{"role": "user", "content": user_input}],
+        max_tokens=500,
+        stream=True,
+    ):
+        return message.choices[0].delta.content
