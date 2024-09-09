@@ -15,6 +15,8 @@
 1. `lib`: contains configuration and utility code files.
 2. `images`: contains UI image.
 3. `app.py`: main function that will run the Streamlit UI.
+4. `lib/conifg.py`: contains functions to load our environment variables and get our api keys.
+5. `lib/utils.py`: contains a function to setup our llm, accept user query and provide response.
 
 ## Installation
  1. Prerequisites
