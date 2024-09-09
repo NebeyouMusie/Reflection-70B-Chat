@@ -19,8 +19,7 @@ client = InferenceClient(
 )
 
 
-
-# Function to setup the llm
+# Function to setup the llm response
 def reflection_response(user_input):
     for message in client.chat_completion(
         messages=[{"role": "user", "content": user_input}],
