@@ -24,6 +24,6 @@ def reflection_response(user_input):
     for message in client.chat_completion(
         messages=[{"role": "user", "content": user_input}],
         max_tokens=500,
-        stream=True,
+        stream=False,
     ):
         return message.choices[0].delta.content
