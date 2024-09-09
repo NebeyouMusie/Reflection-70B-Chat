@@ -30,6 +30,11 @@
  7. run `streamlit run app.py`
  8. open the link that appears on your terminal in your preferred browser.
 
+## Usage
+ - Start by typing your question in the Chat Input located at the bottom of the app.
+ - The LLM will provide a response, which will include the action it took to give the answer to the user along with the main response(`output`). 
+ - Note that it won't remember previous user interactions (NO MEMORY) as that functionality has not been added.
+
 ## Collaboration
 - Collaborations are welcomed ❤️
 
