@@ -9,3 +9,6 @@ def load_config():
 # Function to retrieve GROQ API KEY
 def get_hugging_face_api_key():
     return os.getenv('HUGGING_FACE_TOKEN')
+
+def get_openrouter_api_key():
+    return os.getenv('OPENROUTER_API_KEY')

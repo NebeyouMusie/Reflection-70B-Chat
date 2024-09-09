@@ -3,3 +3,4 @@ streamlit
 huggingface_hub
 langchain
 langchain_community
+requests

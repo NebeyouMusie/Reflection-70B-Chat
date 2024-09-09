@@ -32,7 +32,7 @@ if user_question is not None and user_question != "":
     response = reflection_response(user_question)
     
     # Remove any unwanted prefixes from the response
-    response = response.replace("AI response:", "").replace("chat response:", "").replace("bot response:", "").strip()
+    # response = response.replace("AI response:", "").replace("chat response:", "").replace("bot response:", "").strip()
  
     with st.chat_message("AI"):
         st.write(response)
