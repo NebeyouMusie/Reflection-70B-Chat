@@ -1,7 +1,7 @@
 # Reflection 70B Chat
 ![Reflection 70B Chat UI Image](./images/reflection-ui.png)
 
-## Description
+## Descriptio
 - This GitHub repository integrates `Reflection Llama-3.1 70B`, the world's top open-source large language model (LLM), in a Streamlit-based user interface. The LLM is trained using a new technique called Reflection-Tuning, which enables it to detect and correct mistakes in its own reasoning.
 
 ## Libraries Used
