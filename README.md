@@ -3,6 +3,8 @@
 
 ## Description
 - This GitHub repository integrates `Reflection Llama-3.1 70B`, the world's top open-source large language model (LLM), in a Streamlit-based user interface. The LLM is trained using a new technique called Reflection-Tuning, which enables it to detect and correct mistakes in its own reasoning.
+## NOTE!!
+- As the API providers for this model (`Reflection-70B`) have removed the free version, this implementation will not work. But feel free to look into the implementation of the code.
 
 ## Libraries Used
  - requests
